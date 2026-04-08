@@ -10,7 +10,6 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="https://unpkg.com/lucide@latest/dist/umd/lucide.css">
 <script src="https://unpkg.com/lucide@latest"></script>
 
 </head>
@@ -19,12 +18,12 @@
 <header class="navbar">
 <div class="container nav">
 
+<a href="index.html">
 <img src="wistech.png" class="logo" alt="WisTech Solutions logo">
+</a>
 
 <button class="burger" id="burger" title="Toggle navigation menu">
-<span></span>
-<span></span>
-<span></span>
+<i data-lucide="menu"></i>
 </button>
 
 </div>
@@ -55,12 +54,25 @@
 
 <div class="contact-grid">
 
-<div>
-<h2>Get in Touch</h2>
+<div class="contact-info">
 
-<p>Email: info@wistechsolutions.com</p>
-<p>Phone: +233 XX XXX XXXX</p>
-<p>Location: Accra, Ghana</p>
+<div class="card contact-card">
+<i data-lucide="mail"></i>
+<h4>Email</h4>
+<p>info@wistechsolutions.com</p>
+</div>
+
+<div class="card contact-card">
+<i data-lucide="phone"></i>
+<h4>Phone</h4>
+<p>+233 59 299 2510</p>
+</div>
+
+<div class="card contact-card">
+<i data-lucide="map-pin"></i>
+<h4>Location</h4>
+<p>Spintex, Accra - Ghana</p>
+</div>
 
 </div>
 
@@ -69,7 +81,6 @@
 <input type="text" placeholder="Full Name">
 <input type="email" placeholder="Email">
 
-<label for="service">Select Service</label>
 <select id="service">
 <option>Select Service</option>
 <option>Web Design</option>

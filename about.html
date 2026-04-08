@@ -10,7 +10,6 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="https://unpkg.com/lucide@latest/dist/umd/lucide.css">
 <script src="https://unpkg.com/lucide@latest"></script>
 
 
@@ -20,12 +19,12 @@
 <header class="navbar">
 <div class="container nav">
 
+<a href="index.html">
 <img src="wistech.png" class="logo" alt="WisTech Solutions logo">
+</a>
 
 <button class="burger" id="burger" title="Toggle navigation menu">
-<span></span>
-<span></span>
-<span></span>
+<i data-lucide="menu"></i>
 </button>
 
 </div>
@@ -91,10 +90,28 @@ efficiently and grow.
 
 <div class="team-grid">
 
-<div class="team-card"></div>
-<div class="team-card"></div>
-<div class="team-card"></div>
+<div class="team-card">
+     <img src="team1.jpg" alt="Team member 1">
+     <h3>Sampson Kojo Kpe</h3>
+     <p>Developer</p>
+</div>
 
+<div class="team-card">
+     <img src="team2.jpg" alt="Team member 2">
+     <h3>John Smith</h3>
+     <p>Software Engineer</p>
+</div>
+
+<div class="team-card">
+     <img src="team3.jpg" alt="Team member 3">
+     <h3>Emily Johnson</h3>
+     <p>Project Manager</p>
+</div>
+
+<div class="team-card">
+     <img src="team4.jpg" alt="Team member 4">
+     <h3>Michael Brown</h3>
+     <p>IT Support Specialist</p>
 </div>
 
 </div>
@@ -107,23 +124,37 @@ efficiently and grow.
 <h2>FAQs</h2>
 
 <div class="faq-item">
-<h3>What services do you provide?</h3>
-<p>We provide IT support, software development, and digital solutions.</p>
+<button class="faq-question">
+What services do you provide?
+<i data-lucide="chevron-down"></i>
+</button>
+<p class="faq-answer">
+We provide IT support, software development, and digital solutions.
+</p>
 </div>
 
 <div class="faq-item">
-<h3>Do you work with startups?</h3>
-<p>Yes. We support startups, SMEs, and enterprises.</p>
+<button class="faq-question">
+Do you work with startups?
+<i data-lucide="chevron-down"></i>
+</button>
+<p class="faq-answer">
+Yes. We support startups, SMEs, and enterprises.
+</p>
 </div>
 
 <div class="faq-item">
-<h3>How can we get started?</h3>
-<p>Contact us and we'll schedule a consultation.</p>
+<button class="faq-question">
+How can we get started?
+<i data-lucide="chevron-down"></i>
+</button>
+<p class="faq-answer">
+Contact us and we'll schedule a consultation.
+</p>
 </div>
 
 </div>
 </section>
-
 
 <footer>
 <div class="container footer">

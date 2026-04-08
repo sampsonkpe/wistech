@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", () => {
 
 const burger = document.getElementById("burger");
 const mobileNav = document.getElementById("mobileNav");
@@ -9,8 +9,14 @@ mobileNav.classList.toggle("active");
 });
 }
 
-// init lucide AFTER DOM loads
-if (window.lucide){
+document.querySelectorAll(".faq-question").forEach(btn=>{
+btn.addEventListener("click",()=>{
+btn.parentElement.classList.toggle("active")
+})
+})
+
+// force render icons
+if (window.lucide) {
 lucide.createIcons();
 }
 
