@@ -2,6 +2,24 @@
    RESET
 ========================= */
 
+:root {
+--bg: #0b0f14;
+--text: #e5e7eb;
+--muted: #94a3b8;
+--card: rgba(255,255,255,0.03);
+--border: rgba(255,255,255,0.05);
+}
+
+@media (prefers-color-scheme: light) {
+:root {
+--bg: #ffffff;
+--text: #0f172a;
+--muted: #475569;
+--card: #f8fafc;
+--border: #e2e8f0;
+}
+}
+
 *,
 *::before,
 *::after {
@@ -12,8 +30,8 @@ padding: 0;
 
 body {
 font-family: 'Poppins', sans-serif;
-background: #0b0f14;
-color: #e5e7eb;
+background: var(--bg);
+color: var(--text);
 line-height: 1.6;
 -webkit-font-smoothing: antialiased;
 }
@@ -82,6 +100,33 @@ background: white;
 display: block;
 border-radius: 2px;
 transition: 0.3s;
+}
+
+.burger {
+width: 42px;
+height: 42px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+background: rgba(255,255,255,0.05);
+border: 1px solid rgba(255,255,255,0.08);
+border-radius: 12px;
+
+cursor: pointer;
+transition: 0.25s ease;
+}
+
+.burger:hover {
+background: rgba(255,255,255,0.08);
+border-color: rgba(34,197,94,0.4);
+}
+
+.burger svg {
+width: 18px;
+height: 18px;
+color: #e5e7eb;
 }
 
 /* =========================
@@ -163,6 +208,7 @@ margin-bottom: 25px;
 ========================= */
 
 .cta {
+font-family: 'Poppins', sans-serif;
 background: linear-gradient(135deg,#2563eb,#22c55e);
 border: none;
 color: white;
@@ -170,6 +216,10 @@ padding: 12px 22px;
 border-radius: 8px;
 cursor: pointer;
 font-weight: 500;
+}
+
+button {
+font-family: inherit;
 }
 
 
