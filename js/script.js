@@ -15,6 +15,17 @@ btn.parentElement.classList.toggle("active")
 })
 })
 
+document.addEventListener("click",(e)=>{
+
+const burger = document.getElementById("burger");
+const nav = document.getElementById("mobileNav");
+
+if(!nav.contains(e.target) && !burger.contains(e.target)){
+nav.classList.remove("active");
+}
+
+});
+
 // force render icons
 if (window.lucide) {
 lucide.createIcons();
