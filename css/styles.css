@@ -441,11 +441,15 @@ margin-top: 28px;
 }
 
 .project-card {
-  height:        220px;
   border-radius: 16px;
   position:      relative;
   overflow:      hidden;
   border:        1px solid rgba(192, 192, 192, 0.203);
+}
+
+.projects-preview .project-card {
+  aspect-ratio: 3 / 2;
+  height: auto;
 }
 
 .projects .project-card img {
@@ -838,6 +842,29 @@ footer {
 
   .container {
     padding: 0 20px;
+  }
+
+  .projects .projects-grid {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+    margin: 0 auto;
+    gap: 18px;
+  }
+
+  .projects .project-card {
+    aspect-ratio: 3 / 2;
+    height: auto;
+  }
+
+  .project-info {
+    left: 14px;
+    right: 14px;
+    bottom: -220px;
+    padding: 14px;
+  }
+
+  .project-card:hover .project-info {
+    bottom: 14px;
   }
 
 }
