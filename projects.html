@@ -1,99 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Projects — WisTech Solutions</title>
-
-<link rel="stylesheet" href="css/styles.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<script src="https://unpkg.com/lucide@latest"></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — WisTech Solutions</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
-<header class="navbar">
-<div class="container nav">
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav">
+      <a href="index.html">
+        <img src="wistech.png" class="logo" alt="WisTech Solutions logo">
+      </a>
+      <button class="burger" id="burger" title="Toggle navigation menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
 
-<a href="index.html">
-<img src="wistech.png" class="logo" alt="WisTech Solutions logo">
-</a>
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <button class="cta">Request Service</button>
+    </nav>
+  </header>
 
-<button class="burger" id="burger" title="Toggle navigation menu">
-<i data-lucide="menu"></i>
-</button>
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Our Projects</h1>
+      <p>Technology and creative solutions delivered for clients.</p>
+    </div>
+  </section>
 
-</div>
+  <!-- PROJECTS -->
+  <section class="projects">
+    <div class="container">
+      <div class="projects-grid">
 
-<nav class="mobile-nav" id="mobileNav">
-<a href="index.html">Home</a>
-<a href="projects.html">Projects</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
+        <div class="project-card">
+          <div class="project-info">
+            <h4>Corporate Website</h4>
+            <span>Client: ABC Company</span>
+            <p>Designed and developed a modern, responsive website to enhance online presence and user engagement.</p>
+          </div>
+        </div>
 
-<button class="cta">Request Service</button>
-</nav>
-</header>
+        <div class="project-card">
+          <div class="project-info">
+            <h4>E-commerce Platform</h4>
+            <span>Client: XYZ Corporation</span>
+            <p>Built a scalable e-commerce platform with integrated payment solutions, inventory management, and user-friendly interface.</p>
+          </div>
+        </div>
 
+        <div class="project-card">
+          <div class="project-info">
+            <h4>Mobile App Development</h4>
+            <span>Client: DEF Inc.</span>
+            <p>Developed a cross-platform mobile application to streamline customer interactions and improve service delivery.</p>
+          </div>
+        </div>
 
-<section class="page-hero">
-<div class="container">
+      </div>
+    </div>
+  </section>
 
-<h1>Our Projects</h1>
-<p>Technology and creative solutions delivered for clients.</p>
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer">
+      <div class="copyright">
+        &copy; 2026 WisTech Solutions. All rights reserved. Crafted with precision.
+      </div>
+    </div>
+  </footer>
 
-</div>
-</section>
-
-
-<section class="projects">
-<div class="container">
-
-<div class="projects-grid">
-
-<div class="project-card">
-     <div class="project-info">
-     <h4>Corporate Website</h4>
-     <span>Client: ABC Company</span>
-     <p>Designed and developed a modern, responsive website to enhance online presence and user engagement.</p>
-     </div>
-</div>
-<div class="project-card">
-     <div class="project-info">
-     <h4>E-commerce Platform</h4>
-     <span>Client: XYZ Corporation</span>
-     <p>Built a scalable e-commerce platform with integrated payment solutions, inventory management, and user-friendly interface.</p>
-     </div>
-</div>
-<div class="project-card">
-     <div class="project-info">
-     <h4>Mobile App Development</h4>
-     <span>Client: DEF Inc.</span>
-     <p>Developed a cross-platform mobile application to streamline customer interactions and improve service delivery.</p>
-     </div>
-</div>
-
-</div>
-
-</div>
-</section>
-
-
-<footer>
-<div class="container footer">
-
-<div class="copyright">
-© 2026 WisTech Solutions. All rights reserved.
-Crafted with precision.
-</div>
-
-</div>
-</footer>
-
-<script src="js/script.js"></script>
-
+  <script src="js/script.js"></script>
 </body>
 </html>

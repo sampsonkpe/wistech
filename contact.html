@@ -1,120 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Contact — WisTech Solutions</title>
-
-<link rel="stylesheet" href="css/styles.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<script src="https://unpkg.com/lucide@latest"></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — WisTech Solutions</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
-<header class="navbar">
-<div class="container nav">
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav">
+      <a href="index.html">
+        <img src="wistech.png" class="logo" alt="WisTech Solutions logo">
+      </a>
+      <button class="burger" id="burger" title="Toggle navigation menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
 
-<a href="index.html">
-<img src="wistech.png" class="logo" alt="WisTech Solutions logo">
-</a>
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <button class="cta">Request Service</button>
+    </nav>
+  </header>
 
-<button class="burger" id="burger" title="Toggle navigation menu">
-<i data-lucide="menu"></i>
-</button>
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Let's discuss your project or IT needs.</p>
+    </div>
+  </section>
 
-</div>
+  <!-- CONTACT -->
+  <section class="contact-section">
+    <div class="container">
 
-<nav class="mobile-nav" id="mobileNav">
-<a href="index.html">Home</a>
-<a href="projects.html">Projects</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
+      <div class="contact-grid">
 
-<button class="cta">Request Service</button>
-</nav>
-</header>
+        <!-- Contact info cards -->
+        <div class="contact-info">
 
+          <a href="mailto:info@wistechsolutions.com" class="card contact-card">
+            <i data-lucide="mail"></i>
+            <h4>Email</h4>
+            <p>info@wistechsolutions.com</p>
+          </a>
 
-<section class="page-hero">
-<div class="container">
+          <a href="tel:+233592992510" class="card contact-card">
+            <i data-lucide="phone"></i>
+            <h4>Phone</h4>
+            <p>+233 59 299 2510</p>
+          </a>
 
-<h1>Contact Us</h1>
-<p>Let's discuss your project or IT needs.</p>
+          <a href="https://maps.app.goo.gl/KNZS7iVPFaT1eG7V8" target="_blank" rel="noopener noreferrer" class="card contact-card">
+            <i data-lucide="map-pin"></i>
+            <h4>Location</h4>
+            <p>Spintex, Accra - Ghana</p>
+          </a>
 
-</div>
-</section>
+        </div>
+        
+        <form class="contact-form" action="https://formsubmit.co/your@email.com" method="POST">
 
+          <input type="text" placeholder="Full Name" name="name">
+          <input type="email" placeholder="Email" name="email">
 
-<section class="contact-section">
-<div class="container">
+          <select id="service" name="service">
+            <option>Select Service</option>
+            <option>Web Design</option>
+            <option>Software Development</option>
+            <option>IT Support</option>
+          </select>
 
-<div class="contact-grid">
+          <textarea placeholder="Message" name="message"></textarea>
 
-<div class="contact-info">
+          <button type="submit" class="cta">Send Message</button>
 
-<a href="mailto:info@wistechsolutions.com" class="card contact-card">
-<i data-lucide="mail"></i>
-<h4>Email</h4>
-<p>info@wistechsolutions.com</p>
-</a>
+        </form>
 
-<a href="tel:+233592992510" class="card contact-card">
-<i data-lucide="phone"></i>
-<h4>Phone</h4>
-<p>+233 59 299 2510</p>
-</a>
+      </div>
+    </div>
+  </section>
 
-<a href="https://maps.app.goo.gl/KNZS7iVPFaT1eG7V8" target="_blank" rel="noopener noreferrer" class="card contact-card">
-<i data-lucide="map-pin"></i>
-<h4>Location</h4>
-<p>Spintex, Accra - Ghana</p>
-</a>
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer">
+      <div class="copyright">
+        &copy; 2026 WisTech Solutions. All rights reserved. Crafted with precision.
+      </div>
+    </div>
+  </footer>
 
-</div>
-
-</div>
-
-<form class="contact-form">
-<form action="https://formsubmit.co/your@email.com" method="POST">
-
-<input type="text" placeholder="Full Name">
-<input type="email" placeholder="Email">
-
-<select id="service">
-<option>Select Service</option>
-<option>Web Design</option>
-<option>Software Development</option>
-<option>IT Support</option>
-</select>
-
-<textarea placeholder="Message"></textarea>
-
-<button type="submit" class="cta">Send Message</button>
-
-</form>
-
-</div>
-
-</div>
-</section>
-
-
-<footer>
-<div class="container footer">
-
-<div class="copyright">
-© 2026 WisTech Solutions. All rights reserved.
-Crafted with precision.
-</div>
-
-</div>
-</footer>
-
-<script src="js/script.js"></script>
-
+  <script src="js/script.js"></script>
 </body>
 </html>

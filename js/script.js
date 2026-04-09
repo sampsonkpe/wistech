@@ -1,62 +1,50 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-const burger = document.getElementById("burger");
-const mobileNav = document.getElementById("mobileNav");
-const overlay = document.getElementById("overlay");
+  /* ─── Element refs ─── */
+  const burger    = document.getElementById("burger");
+  const mobileNav = document.getElementById("mobileNav");
+  const overlay   = document.getElementById("overlay");
 
+  function closeNav() {
+    if (mobileNav) mobileNav.classList.remove("active");
+    if (overlay)   overlay.classList.remove("active");
+  }
 
-// TOGGLE MENU
-if (burger && mobileNav){
-burger.addEventListener("click", () => {
-mobileNav.classList.toggle("active");
+  /* ─── Toggle menu on burger click ─── */
+  if (burger && mobileNav) {
+    burger.addEventListener("click", () => {
+      mobileNav.classList.toggle("active");
+      if (overlay) overlay.classList.toggle("active");
+    });
+  }
 
-if (overlay){
-overlay.classList.toggle("active");
-}
+  /* ─── Close on overlay click ─── */
+  if (overlay) {
+    overlay.addEventListener("click", closeNav);
+  }
 
-});
-}
+  /* ─── Close on click outside nav/burger ─── */
+  document.addEventListener("click", (e) => {
+    if (
+      mobileNav &&
+      burger &&
+      !mobileNav.contains(e.target) &&
+      !burger.contains(e.target)
+    ) {
+      closeNav();
+    }
+  });
 
+  /* ─── FAQ accordion ─── */
+  document.querySelectorAll(".faq-question").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      btn.parentElement.classList.toggle("active");
+    });
+  });
 
-// CLOSE WHEN CLICK OVERLAY
-if (overlay){
-overlay.addEventListener("click", () => {
-mobileNav.classList.remove("active");
-overlay.classList.remove("active");
-});
-}
-
-
-// CLOSE WHEN CLICK OUTSIDE
-document.addEventListener("click",(e)=>{
-
-if(
-mobileNav &&
-burger &&
-!mobileNav.contains(e.target) &&
-!burger.contains(e.target)
-){
-mobileNav.classList.remove("active");
-
-if (overlay){
-overlay.classList.remove("active");
-}
-}
-
-});
-
-
-// FAQ
-document.querySelectorAll(".faq-question").forEach(btn=>{
-btn.addEventListener("click",()=>{
-btn.parentElement.classList.toggle("active")
-})
-});
-
-
-// LUCIDE
-if (window.lucide) {
-lucide.createIcons();
-}
+  /* ─── Lucide icons ─── */
+  if (window.lucide) {
+    lucide.createIcons();
+  }
 
 });

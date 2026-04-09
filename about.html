@@ -1,201 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>About — WisTech Solutions</title>
-
-<link rel="stylesheet" href="css/styles.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<script src="https://unpkg.com/lucide@latest"></script>
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — WisTech Solutions</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
-<header class="navbar">
-<div class="container nav">
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav">
+      <a href="index.html">
+        <img src="wistech.png" class="logo" alt="WisTech Solutions logo">
+      </a>
+      <button class="burger" id="burger" title="Toggle navigation menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
 
-<a href="index.html">
-<img src="wistech.png" class="logo" alt="WisTech Solutions logo">
-</a>
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <button class="cta">Request Service</button>
+    </nav>
+  </header>
 
-<button class="burger" id="burger" title="Toggle navigation menu">
-<i data-lucide="menu"></i>
-</button>
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>About WisTech Solutions</h1>
+      <p>We deliver innovative IT solutions, software development, and digital services for modern organisations.</p>
+    </div>
+  </section>
 
-</div>
+  <!-- STATS -->
+  <div class="stats-grid">
 
-<nav class="mobile-nav" id="mobileNav">
-<a href="index.html">Home</a>
-<a href="projects.html">Projects</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
+    <div class="stat-card">
+      <i data-lucide="users"></i>
+      <h3>100+</h3>
+      <p>Clients Served</p>
+    </div>
 
-<button class="cta">Request Service</button>
-</nav>
-</header>
+    <div class="stat-card">
+      <i data-lucide="award"></i>
+      <h3>250+</h3>
+      <p>Projects Completed</p>
+    </div>
 
+    <div class="stat-card">
+      <i data-lucide="zap"></i>
+      <h3>5+</h3>
+      <p>Years Experience</p>
+    </div>
 
-<section class="page-hero">
-<div class="container">
+    <div class="stat-card">
+      <i data-lucide="globe"></i>
+      <h3>15+</h3>
+      <p>Countries Reached</p>
+    </div>
 
-<h1>About WisTech Solutions</h1>
-<p>
-We deliver innovative IT solutions, software development,
-and digital services for modern organisations.
-</p>
+  </div>
 
-</div>
-</section>
+  <!-- ABOUT -->
+  <section class="about-section">
+    <div class="container">
+      <div class="about-grid">
 
-<div class="stats-grid">
+        <div>
+          <h2>Who We Are</h2>
+          <p>
+            WisTech Solutions is a technology-driven company focused on delivering reliable IT services,
+            software solutions, and digital transformation support for businesses.
+          </p>
+          <p>
+            Our mission is to provide modern, scalable, and practical technology solutions that help
+            organisations operate efficiently and grow.
+          </p>
+        </div>
 
-<div class="stat-card">
-<i data-lucide="users"></i>
-<h3>100+</h3>
-<p>Clients Served</p>
-</div>
+        <div class="about-card"></div>
+      </div>
+    </div>
+  </section>
 
-<div class="stat-card">
-<i data-lucide="award"></i>
-<h3>250+</h3>
-<p>Projects Completed</p>
-</div>
+  <!-- TEAM -->
+  <section class="team">
+    <div class="container">
+      <h2>Our Team</h2>
+      <div class="team-grid">
 
-<div class="stat-card">
-<i data-lucide="zap"></i>
-<h3>5+</h3>
-<p>Years Experience</p>
-</div>
+        <div class="team-card">
+          <img src="team1.jpg" alt="Team member 1">
+          <h3>Sampson Kojo Kpe</h3>
+          <p>Developer</p>
+        </div>
 
-<div class="stat-card">
-<i data-lucide="globe"></i>
-<h3>15+</h3>
-<p>Countries Reached</p>
-</div>
+        <div class="team-card">
+          <img src="team2.jpg" alt="Team member 2">
+          <h3>John Smith</h3>
+          <p>Software Engineer</p>
+        </div>
 
-</div>
+        <div class="team-card">
+          <img src="team3.jpg" alt="Team member 3">
+          <h3>Emily Johnson</h3>
+          <p>Project Manager</p>
+        </div>
 
+        <div class="team-card">
+          <img src="team4.jpg" alt="Team member 4">
+          <h3>Michael Brown</h3>
+          <p>IT Support Specialist</p>
+        </div>
 
-<section class="about-section">
-<div class="container">
+      </div>
+    </div>
+  </section>
 
-<div class="about-grid">
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="container">
+      <h2>FAQs</h2>
 
-<div>
-<h2>Who We Are</h2>
+      <div class="faq-item">
+        <button class="faq-question">
+          What services do you provide?
+          <i data-lucide="chevron-down"></i>
+        </button>
+        <p class="faq-answer">We provide IT support, software development, and digital solutions.</p>
+      </div>
 
-<p>
-WisTech Solutions is a technology-driven company focused on
-delivering reliable IT services, software solutions, and
-digital transformation support for businesses.
-</p>
+      <div class="faq-item">
+        <button class="faq-question">
+          Do you work with startups?
+          <i data-lucide="chevron-down"></i>
+        </button>
+        <p class="faq-answer">Yes. We support startups, SMEs, and enterprises.</p>
+      </div>
 
-<p>
-Our mission is to provide modern, scalable, and practical
-technology solutions that help organisations operate
-efficiently and grow.
-</p>
+      <div class="faq-item">
+        <button class="faq-question">
+          How can we get started?
+          <i data-lucide="chevron-down"></i>
+        </button>
+        <p class="faq-answer">Contact us and we'll schedule a consultation.</p>
+      </div>
 
-</div>
+    </div>
+  </section>
 
-<div class="about-card"></div>
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer">
+      <div class="copyright">
+        &copy; 2026 WisTech Solutions. All rights reserved. Crafted with precision.
+      </div>
+    </div>
+  </footer>
 
-</div>
-
-</div>
-</section>
-
-
-<section class="team">
-<div class="container">
-
-<h2>Our Team</h2>
-
-<div class="team-grid">
-
-<div class="team-card">
-     <img src="team1.jpg" alt="Team member 1">
-     <h3>Sampson Kojo Kpe</h3>
-     <p>Developer</p>
-</div>
-
-<div class="team-card">
-     <img src="team2.jpg" alt="Team member 2">
-     <h3>John Smith</h3>
-     <p>Software Engineer</p>
-</div>
-
-<div class="team-card">
-     <img src="team3.jpg" alt="Team member 3">
-     <h3>Emily Johnson</h3>
-     <p>Project Manager</p>
-</div>
-
-<div class="team-card">
-     <img src="team4.jpg" alt="Team member 4">
-     <h3>Michael Brown</h3>
-     <p>IT Support Specialist</p>
-</div>
-
-</div>
-</section>
-
-
-<section class="faq">
-<div class="container">
-
-<h2>FAQs</h2>
-
-<div class="faq-item">
-<button class="faq-question">
-What services do you provide?
-<i data-lucide="chevron-down"></i>
-</button>
-<p class="faq-answer">
-We provide IT support, software development, and digital solutions.
-</p>
-</div>
-
-<div class="faq-item">
-<button class="faq-question">
-Do you work with startups?
-<i data-lucide="chevron-down"></i>
-</button>
-<p class="faq-answer">
-Yes. We support startups, SMEs, and enterprises.
-</p>
-</div>
-
-<div class="faq-item">
-<button class="faq-question">
-How can we get started?
-<i data-lucide="chevron-down"></i>
-</button>
-<p class="faq-answer">
-Contact us and we'll schedule a consultation.
-</p>
-</div>
-
-</div>
-</section>
-
-<footer>
-<div class="container footer">
-
-<div class="copyright">
-© 2026 WisTech Solutions. All rights reserved.
-Crafted with precision.
-</div>
-
-</div>
-</footer>
-
-<script src="js/script.js"></script>
-
+  <script src="js/script.js"></script>
 </body>
 </html>

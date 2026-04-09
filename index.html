@@ -1,201 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>WisTech Solutions</title>
-
-<link rel="stylesheet" href="css/styles.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<script src="https://unpkg.com/lucide@latest"></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WisTech Solutions</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar">
-<div class="container nav">
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav">
+      <a href="index.html">
+        <img src="wistech.png" class="logo" alt="WisTech Solutions logo">
+      </a>
+      <button class="burger" id="burger" title="Toggle navigation menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
 
-<a href="index.html">
-<img src="wistech.png" class="logo" alt="WisTech Solutions logo">
-</a>
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="cta">Request Service</a>
+    </nav>
+  </header>
 
-<button class="burger" id="burger" title="Toggle navigation menu">
-<i data-lucide="menu"></i>
-</button>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1>Modern IT &amp; Digital Solutions</h1>
+      <p>We design, support and build technology for modern businesses.</p>
+      <a href="contact.html" class="cta">Request Service</a>
+    </div>
+  </section>
 
-</div>
+  <!-- SERVICES -->
+  <section class="services">
+    <div class="container">
+      <h2>Services</h2>
+      <div class="services-grid">
 
-<nav class="mobile-nav" id="mobileNav">
-<a href="index.html">Home</a>
-<a href="projects.html">Projects</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
+        <div class="card service">
+          <i data-lucide="monitor-cloud"></i>
+          <h3>Web Design</h3>
+          <p>Beautiful and responsive websites that drive engagement and conversions.</p>
+        </div>
 
-<a href="contact.html" class="cta">
-Request Service
-</a>
+        <div class="card service">
+          <i data-lucide="code"></i>
+          <h3>Software Development</h3>
+          <p>Custom software solutions tailored to your business needs.</p>
+        </div>
 
-</nav>
+        <div class="card service">
+          <i data-lucide="pen-tool"></i>
+          <h3>Graphic Design</h3>
+          <p>Eye-catching graphics and branding that represent your business.</p>
+        </div>
 
-</header>
+        <div class="card service">
+          <i data-lucide="headset"></i>
+          <h3>IT Support</h3>
+          <p>Reliable and timely technical support for all your IT needs.</p>
+        </div>
 
+        <div class="card service">
+          <i data-lucide="trending-up"></i>
+          <h3>Digital Marketing</h3>
+          <p>Data-driven marketing strategies to grow your online presence.</p>
+        </div>
 
-<!-- HERO -->
-<section class="hero">
+        <div class="card service">
+          <i data-lucide="graduation-cap"></i>
+          <h3>IT Training</h3>
+          <p>Practical IT training to empower your team with essential skills.</p>
+        </div>
 
-<div class="container">
+      </div>
+    </div>
+  </section>
 
-<h1>
-Modern IT & Digital Solutions
-</h1>
+  <!-- PROJECTS PREVIEW -->
+  <section class="projects-preview">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
 
-<p>
-We design, support and build technology
-for modern businesses.
-</p>
+        <div class="project-card">
+          <div class="project-info">
+            <h4>Corporate Website</h4>
+            <span>Client: ABC Company</span>
+          </div>
+        </div>
 
-<a href="contact.html" class="cta">
-Request Service
-</a>
+        <div class="project-card">
+          <div class="project-info">
+            <h4>E-commerce Platform</h4>
+            <span>Client: XYZ Corporation</span>
+          </div>
+        </div>
 
-</div>
+        <div class="project-card">
+          <div class="project-info">
+            <h4>Mobile App Development</h4>
+            <span>Client: DEF Inc.</span>
+          </div>
+        </div>
 
-</section>
+      </div>
+      <a href="projects.html" class="view-all">View All Projects</a>
+    </div>
+  </section>
 
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Let's build something great</h2>
+      <a href="contact.html" class="cta">Request Service</a>
+    </div>
+  </section>
 
-<!-- SERVICES -->
-<section class="services">
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer">
+      <div class="copyright">
+        &copy; 2026 WisTech Solutions. All rights reserved. Crafted with precision.
+      </div>
+    </div>
+  </footer>
 
-<div class="container">
-
-<h2>Services</h2>
-
-<div class="services-grid">
-
-<div class="card service">
-     <i data-lucide="monitor-cloud"></i>
-     <h3>Web Design</h3>
-     <p>
-     Beautiful and responsive websites that drive engagement and conversions.
-     </p>
-</div>
-<div class="card service">
-     <i data-lucide="code"></i>
-     <h3>Software Development</h3>
-     <p>
-     Custom software solutions tailored to your business needs.
-     </p>
-</div>
-<div class="card service">
-     <i data-lucide="pen-tool"></i>
-     <h3>Graphic Design</h3>
-     <p>
-     Eye-catching graphics and branding that represent your business.
-     </p>
-</div>
-<div class="card service">
-     <i data-lucide="headset"></i>
-     <h3>IT Support</h3>
-     <p>
-     Reliable and timely technical support for all your IT needs.
-     </p>
-</div>
-<div class="card service">
-     <i data-lucide="trending-up"></i>
-     <h3>Digital Marketing</h3>
-     <p>
-     Data-driven marketing strategies to grow your online presence.
-     </p>
-</div>
-<div class="card service">
-     <i data-lucide="graduation-cap"></i>
-     <h3>IT Training</h3>
-     <p>
-     Practical IT training to empower your team with essential skills.
-     </p>
-</div>
-
-</div>
-
-</section>
-
-
-<!-- PROJECTS PREVIEW -->
-<section class="projects-preview">
-
-<div class="container">
-
-<h2>Projects</h2>
-
-<div class="projects-grid">
-
-<div class="project-card">
-     <div class="project-info">
-     <h4>Corporate Website</h4>
-     <span>Client: ABC Company</span>
-     </div>
-</div>
-<div class="project-card">
-     <div class="project-info">
-     <h4>E-commerce Platform</h4>
-     <span>Client: XYZ Corporation</span>
-     </div>
-</div>
-<div class="project-card">
-     <div class="project-info">
-     <h4>Mobile App Development</h4>
-     <span>Client: DEF Inc.</span>
-     </div>
-</div>
-
-</div>
-
-<a href="projects.html" class="view-all">
-View All Projects
-</a>
-
-</div>
-
-</section>
-
-
-<!-- CTA -->
-<section class="cta-section">
-
-<div class="container">
-
-<h2>
-Let's build something great
-</h2>
-
-<a href="contact.html" class="cta">
-Request Service
-</a>
-
-</div>
-
-</section>
-
-
-<!-- FOOTER -->
-<footer>
-
-<div class="container footer">
-
-<div class="copyright">
-© 2026 WisTech Solutions. All rights reserved.
-Crafted with precision.
-</div>
-
-</div>
-
-</footer>
-
-<script src="js/script.js"></script>
-
+  <script src="js/script.js"></script>
 </body>
 </html>
