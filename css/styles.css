@@ -33,6 +33,26 @@
 
 
 /* =========================
+   PAGE TRANSITIONS
+========================= */
+
+body {
+animation: pageFade 3s ease;
+}
+
+@keyframes pageFade {
+from {
+opacity: 0;
+transform: translateY(6px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+
+/* =========================
    RESET
 ========================= */
 
@@ -237,17 +257,61 @@ button {
    SHARED CARD
 ========================= */
 
+:root {
+--hover-lift: -6px;
+--hover-speed: 1s;
+--hover-ease: cubic-bezier(0.25, 1, 0.5, 1);
+}
+
 .card {
   padding:       30px;
   border-radius: 14px;
   background:    var(--card);
   border:        1px solid var(--border);
-  transition:    0.3s;
+
+transition:
+transform var(--hover-speed) var(--hover-ease),
+border-color var(--hover-speed) var(--hover-ease),
+box-shadow var(--hover-speed) var(--hover-ease);
 }
 
 .card:hover {
-  transform:    translateY(-6px);
-  border-color: var(--accent);
+     transform: translateY(var(--hover-lift));
+     border-color: var(--accent);
+}
+
+
+/* =========================
+   SHARED ANIMATION
+========================= */
+
+.project-card,
+.team-card,
+.contact-card,
+.stat-card {
+transition:
+transform var(--hover-speed) var(--hover-ease),
+border-color var(--hover-speed) var(--hover-ease),
+box-shadow var(--hover-speed) var(--hover-ease);
+}
+
+.project-card:hover,
+.team-card:hover,
+.contact-card:hover,
+.stat-card:hover {
+transform: translateY(var(--hover-lift));
+}
+
+.card svg,
+.stat-card svg,
+.contact-card svg {
+transition: transform var(--hover-speed) var(--hover-ease);
+}
+
+.card:hover svg,
+.stat-card:hover svg,
+.contact-card:hover svg {
+transform: translateY(-4px);
 }
 
 
@@ -317,12 +381,12 @@ button {
 .service svg {
   margin-bottom: 10px;
   color:         var(--accent);
-  transition:    0.3s;
+  transition:var(--hover-speed) var(--hover-ease);
 }
 
 .service h3 {
   margin:     0;
-  transition: 0.3s;
+  transition: var(--hover-speed) var(--hover-ease);
 }
 
 .service p {
@@ -332,14 +396,13 @@ button {
   transform: translateY(10px);
   font-size: 13px;
   color:     var(--muted);
-  transition: 0.3s;
+  transition:var(--hover-speed) var(--hover-ease);
   padding:   0 10px;
 }
 
 .service:hover svg,
 .service:hover h3 {
   transform:  translateY(-25px);
-  transition: 0.3s;
 }
 
 .service:hover p {
@@ -376,11 +439,6 @@ button {
                     rgba(34, 197, 94, 0.2)
                   );
   border:         1px solid rgba(192, 192, 192, 0.203);
-  transition:     0.3s;
-}
-
-.project-card:hover {
-  transform: translateY(-6px);
 }
 
 .project-info {
@@ -408,7 +466,7 @@ button {
   border-radius: 14px;
   background:    var(--card);
   border:        1px solid var(--border);
-  transition:    0.3s;
+  transition:var(--hover-speed) var(--hover-ease);
 }
 
 .view-all:hover {
@@ -470,10 +528,9 @@ button {
 
 .stats-grid {
   display:               grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap:                   20px;
   margin-top:            30px;
-  padding:               0;
   justify-content: center;
 }
 
@@ -511,7 +568,7 @@ button {
 .faq-answer {
   max-height: 0;
   overflow:   hidden;
-  transition: 0.3s ease;
+  transition:var(--hover-speed) var(--hover-ease);
   color:      var(--muted);
 }
 
@@ -537,7 +594,7 @@ button {
 }
 
 .team-card {
-  aspect-ratio:    1 / 1;
+  aspect-ratio:    1/1;
   background:      var(--card);
   border:          1px solid var(--border);
   border-radius:   16px;
@@ -547,12 +604,6 @@ button {
   flex-direction:  column;
   justify-content: center;
   align-items:     center;
-  transition:      0.3s;
-}
-
-.team-card:hover {
-  transform:    translateY(-5px);
-  border-color: var(--accent);
 }
 
 .team-card img {
@@ -589,7 +640,6 @@ button {
   cursor:     pointer;
   padding:    20px;
   min-height: 150px;
-  max-width:  600px;
 }
 
 .contact-card svg {
@@ -684,24 +734,21 @@ footer {
     font-size: 34px;
   }
 
-  .about-grid,
-  .contact-grid {
-    grid-template-columns: 1fr;
+  .about-grid {
+    grid-template-columns:1fr;
+  }
+
+  .contact-info {
+    grid-template-columns:1fr;
   }
 
   .team-grid {
     grid-template-columns: 1fr;
   }
 
+  .stats-grid {
+    grid-template-columns:1fr;
+    justify-content:center;
 }
 
-
-/* =========================
-   RESPONSIVE — SMALL (≤500px)
-========================= */
-
-@media (max-width: 500px) {
-  .team-grid {
-    grid-template-columns: 1fr;
-  }
 }
